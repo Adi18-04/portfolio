@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* UTIL */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.section.light {
+  background: #ffffff;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #5b5fd8;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5b5fd8, #7b5de8);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.subtitle {
+  margin: 15px 0 30px;
+  font-size: 1.1rem;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: white;
+  color: #5b5fd8;
+}
+
+.btn.outline {
+  border: 2px solid white;
+  color: white;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #f4f6fb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* CARDS */
+.card {
+  background: #f4f6fb;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card a{
+  color: #000;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #5b5fd8;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.btn,
+.skill-card,
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.skill-card:hover,
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
