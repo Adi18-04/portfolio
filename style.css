@@ -25,25 +25,43 @@ body {
 .section.light {
   background: #ffffff;
 }
-
 h2 {
   margin-bottom: 20px;
   font-size: 2rem;
   color: #5b5fd8;
 }
 
-/* HERO */
 .hero {
+  position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, #5b5fd8, #7b5de8);
+
+  background-image: url("Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+.hero-content h5 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .subtitle {
@@ -61,20 +79,21 @@ h2 {
   padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.btn.primary {
+.btn.primary,
+.btn.primary:link,
+.btn.primary:visited {
   background: white;
-  color: #5b5fd8;
+  color: #000;
 }
 
-.btn.outline {
-  border: 2px solid white;
-  color: white;
+.btn.primary:hover {
+  background: #5b5fd8;
+  color: #ffffff;
 }
 
-/* SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
