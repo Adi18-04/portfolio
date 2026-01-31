@@ -94,19 +94,25 @@ h2 {
   color: #ffffff;
 }
 
-.skills-grid {
+.skills-grid,
+.education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-.skill-card {
+.skill-card,
+.education-card {
   background: #f4f6fb;
   padding: 20px;
   border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 150px;
 }
 
-/* CARDS */
 .card {
   background: #f4f6fb;
   color: #000;
@@ -141,12 +147,14 @@ footer {
 
 .btn,
 .skill-card,
+.education-card,
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover,
 .skill-card:hover,
+.education-card:hover,
 .card:hover {
   transform: scale(1.08);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
