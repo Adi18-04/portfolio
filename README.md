@@ -6,6 +6,7 @@ https://adi18-04.github.io/portfolio/
 
 ### Tech Stack
 
-* Web Developmen
+* Web Development
 * Cyber Security
 * Digital Marketing
+* Technical/Customer Support
